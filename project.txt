@@ -35,5 +35,12 @@
 
 #####################
 DOMACI:
- -> Izmestiti logiku kao sto smo to radili sa modelima
- ->
+    -> Koristiti ModelForme u Djangu
+        -> Napraviti formu za unos mileage (vehiclelog-a) na /profile
+
+    -> Korisnik moze SAMO jednom dnevno da unese podatke
+        -> forma se ne prikazuje ako smo vec uneli za danas
+
+    -> Korisnik ne moze da menja vozilo i ne moze da menja datum
+        -> Polja vozilo i datum se NE prikazuju
+

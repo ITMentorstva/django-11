@@ -6,3 +6,6 @@ class VehicleLogInline(admin.StackedInline):
     extra = 1
 
     exclude = ['vehicle']
+
+    def has_change_permission(self, request, obj=None):
+        return False
