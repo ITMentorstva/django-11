@@ -1,0 +1,39 @@
+
+-> Users
+    -> user_type => administrator
+    -> user_type => dispatcher
+    -> user_type => driver
+
+
+-> Vehicles (vozila)
+    -> type
+        -> truck, van, car
+    -> plate_number
+    -> brand
+    -> model
+    -> year
+    -> mileage
+        -> default 0
+    -> status
+        -> available, in_use, maintenance, inactive
+    -> user
+        -> nullable
+        -> OneToOne
+    -> workhours -> default: 0
+    -> capacity
+
+
+-> VehicleLog
+    -> Koje vozilo je preuzeo
+    -> Ko je kada preuzeo neko vozilo
+    -> Koliko je kilometara presao
+    -> Kada je vratio vozilo
+
+-> Shipments
+-> Expenses
+
+
+#####################
+DOMACI:
+ -> Izmestiti logiku kao sto smo to radili sa modelima
+ ->
